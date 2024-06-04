@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+
+
+:root{
+    --bgColor: #121013;
+    --fgColor: white;
+    --purple: #9334ea;
+    --btnColor: #fdfe02;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: .1s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    animation-timing-function: linear;
+    background-attachment: fixed;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navMid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navMid p{
+    margin-inline: 20px;
+}
+
+.navRight button{
+    background-color: var(--btnColor);
+    border:  none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--bgColor);
+    font-size: 15px;
+    font-weight: bold;
+    border: var(--btnColor) dashed;
+}
+
+.navRight button:hover {
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: var(--btnColor);
+}
+
+
+
+
+
+
+
+
+
+
+.titleSec{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bgColor);
+    /* background-color: var(--bgColor); */
+    /* background-image: radial-gradient(rgb(10, 10, 51), var(--bgColor)); */
+}
+
+.titleSecCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    text-align: center;
+}
+
+.titleTxt{
+    flex: 1;
+    text-align: start;
+}
+
+.titleImg{
+    flex: 1;
+}
+
+.titleImg img{
+    max-height: 700px;
+    /* min-width: 50px; */
+}
+
+
+.titleSecCont h1 {
+    font-size: 60px;
+}
+
+.titleSecCont h2{
+    font-size: 60px;
+}
+
+.titleSecCont p{
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.signUpBar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.signUpBar input {
+    font-size: 20px;
+    padding: 12px 25px;
+    /* border: var(--btnColor) solid; */
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: solid var(--bgColor);
+    border-top: solid var(--bgColor);
+    border-bottom: solid var(--bgColor);
+}
+
+.signUpBar input:focus {
+    outline: none;
+}
+
+.signUpBar button{
+    background-color: var(--btnColor);
+    color: var(--bgColor);
+    border-left: none;
+    border-top: solid var(--bgColor);
+    border-bottom: solid var(--bgColor);
+    border-right: solid var(--bgColor);
+    /* border: var(--btnColor) dashed; */
+    padding: 12px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.signUpBar button:hover{
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: white;
+}
+
+.signedUpBar{
+    text-align: center;
+    border: var(--bgColor) solid;
+    border-radius: 10px;
+    background-color: var(--btnColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 12px 30px;
+    font-size: 20px;
+}
+
+.signedUpBar:hover{
+    cursor: pointer;
+    border: dashed;
+}
+
+
+.signUpError{
+    margin-top: 3px !important;
+    margin-left: 10px;
+    font-size: 15px !important;
+    color: red;
+}
+
+.signUpError2{
+    align-items: start !important;
+    text-align: left !important;
+}
+
+
+
+
+
+
+
+
+
+
+.featureSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bgColor);
+}
+
+.featureSecCont{
+    width: 60vw;
+}
+
+.featureCard{
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.featureCard:nth-child(odd){
+    flex-direction: row;
+}
+
+.featureCard:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.cardImg{
+    flex: 1;
+    margin-inline: 20px;
+}
+
+.cardImg img{
+    height: 700px;
+    min-width: 50px;
+}
+
+.cardDesc{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-inline: 20px;
+}
+
+.cardDesc h1{
+    font-size: 50px;
+    text-align: left;
+}
+
+.cardDesc p{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.cardDesc button {
+    background-color: var(--btnColor);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    color: var(--bgColor);
+    font-size: 15px;
+    font-weight: bold;
+    border: var(--bgColor) solid;
+    margin-top: 20px;
+}
+
+.cardDesc button:hover {
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: white;
+}
+
+
+.lastSec{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bgColor);
+    margin-bottom: 20px;
+}
+
+.lastSecCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    text-align: center;
+}
+
+.lastSecCont h1{
+    font-size: 60px;
+}
+
+.lastSecCont p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+footer{
+    height: 20vh;
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    border-top: var(--fgColor) solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.footerLink {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerItem {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .featureSecCont {
+        width: 75vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .featureSecCont {
+        width: 93vw;
+    }
+
+    .titleImg img{
+        max-height: 500px;
+    }
+
+    .lastSecCont{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .featureCard {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+
+    .titleImg img{
+        /* max-height: 300px; */
+        display: none;
+    }
+
+    .titleSecCont {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .titleSecCont h1{
+        font-size: 40px;
+    }
+
+    .titleSecCont h2{
+        font-size: 40px;
+    }
+
+    .titleSecCont p {
+        font-size: 15px;
+    }
+
+    .signUpBar input{
+        font-size: 15px;
+        padding: 12px 10px;
+    }
+
+    .signUpBar button {
+        font-size: 15px;
+        padding: 12px 10px;
+    }
+
+    .lastSecCont h1{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cardDesc h1{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .lastSecCont h1{
+        font-size: 30px;
+    }
+}
