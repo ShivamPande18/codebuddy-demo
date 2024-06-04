@@ -1,10 +1,12 @@
+import TOKEN  from "./config.js"
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js";
 import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
-
+//AIzaSyDnuQntoOhzS8KifdMCTzjZDrtcA_FoCp4
 
 const firebaseConfig = {
-    apiKey: $API_KEY,
+    apiKey: TOKEN,
     authDomain: "codebuddy-4f58c.firebaseapp.com",
     projectId: "codebuddy-4f58c",
     storageBucket: "codebuddy-4f58c.appspot.com",
@@ -50,10 +52,5 @@ async function OnSignUp(ind,e){
     }
     else{
         signUpError[ind].innerHTML = "*Enter a valid email";
-        // signUpError[ind].style
     }
 }
-
-// function onReview(){
-//     open("https://forms.gle/Hh5RgPBtBpgnA2iu9");
-// }
